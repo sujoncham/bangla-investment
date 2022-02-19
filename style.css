@@ -73,7 +73,6 @@ input-field{
     align-items: center;
 }
 
-
 #text, #text1, #text2{
     color: #f52021;
     font-size: 10px;
@@ -109,8 +108,7 @@ input-field{
     
     .image-part img{
         width: 100%;
-    }
-    
+    }  
     
 }
 

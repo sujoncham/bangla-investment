@@ -1,5 +1,4 @@
 
-
 // this is income and expences part 
 function calculate(){
     
@@ -64,7 +63,6 @@ function save(){
     // remaining balance
     document.getElementById('remain-balance').innerText = mainValue - totalSave;
     text2 = "Successfull";
-    
     }
     document.getElementById('text2').innerText = text2;
 }
