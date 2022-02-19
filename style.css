@@ -1,7 +1,11 @@
 
-.Investment{
+.investment{
     width: 992px;
     margin: 0 auto;  
+}
+
+.investment h1{
+    text-align: center;
 }
 
 .image-part {
@@ -15,28 +19,37 @@
     padding: 10px;
 }
 
-.image-part img{
-    width: 100%;
-    height: 500px;
-}
-
 .calculation{
     display: flex;
 }
 
-label{
-    width: 80px;
+.input-field label{
+    width: 60px;
     display: inline-block;
     padding: 10px;
 }
 
+.percentage label{
+    width: 50px;
+    display: inline-block;
+    padding: 8px;
+}
+
+.percentage input{
+    padding: 5px;
+    margin-bottom: 8px;
+    width: 120px;
+}
+
 .input-field input{
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 10px;
+    width: 120px;
 }
 
 .percentage{
     display: flex;
+    justify-content: center;
 }
 
 .percentage span{
@@ -51,10 +64,59 @@ input-field{
     align-items: center;
 }
 
-#calculate-btn, #save-btn{
+#calculate-btn {
     background-color: #037247;
     border: none;
     border-radius: 8px;
     padding: 10px 30px;
     color: #fff;
 }
+
+#save-btn{
+    background-color: #037247;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 16px;
+    color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .investment{
+        width: 100%;
+    }
+
+    .calculation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #save-btn{
+        background-color: #037247;
+        border: none;
+        border-radius: 8px;
+        padding: 5px 16px;
+        color: #fff;
+    }
+
+    .image-part img{
+        width: 100%;
+    }
+    
+
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 769px) {
+    .investment{
+        width: 100%;
+    }
+
+    .image-part img{
+        width: 100%;
+        height: 500px;
+    }
+
+
+  }

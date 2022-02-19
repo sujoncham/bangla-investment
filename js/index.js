@@ -12,7 +12,7 @@ function calculate(){
     const totalBalance = parseInt(incomeInput.value) - totalCost;
     // console.log(totalBalance);
 
-    document.getElementById('income-total').innerText = incomeValue;
+   
     document.getElementById('expence-total').innerText = totalCost;
     document.getElementById('balance-total').innerText = totalBalance;
 }
