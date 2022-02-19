@@ -1,6 +1,24 @@
 
+body{
+    padding: 20px;
+}
+
+p, h4, h3, h2{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
 .investment h1{
     text-align: center;
+    background: #540da3;
+    padding: 10px;
+    color: #fff;
+}
+
+.transaction{
+    margin-top: 10px;
 }
 
 .main-part{
@@ -9,6 +27,7 @@
 
 .calculation{
     display: flex;
+    justify-content: space-between;
 }
 
 .input-field label{
@@ -38,6 +57,8 @@
 .percentage{
     display: flex;
     justify-content: center;
+    align-items: baseline;
+    padding: 10px;
 }
 
 .percentage span{
@@ -53,7 +74,7 @@ input-field{
 }
 
 
-#warning-text, #text{
+#text, #text1, #text2{
     color: #f52021;
     font-size: 10px;
 }
@@ -63,7 +84,7 @@ input-field{
     .investment{
         width: 100%;
     }
-
+    
     .image-part {
         width: 100%;
     }
@@ -78,43 +99,42 @@ input-field{
         flex-direction: column;
         align-items: center;
     }
-
+    
     #save-btn{
         background-color: #037247;
         border: none;
         border-radius: 8px;
         color: #fff;
     }
-
+    
     .image-part img{
         width: 100%;
     }
     
+    
+}
 
-  }
-
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 769px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 769px) {
     .investment{
         width: 100%;
+        height: 680px;
     }
-
+    
     .image-part {
-        width: 60%;
-        padding: 10px;
+        width: 58%;
     }
     
     .main-part{
-        width: 40%;
+        width: 38%;
         text-align: center;
-        padding: 10px;
     }
     
-
     .image-part img{
         width: 100%;
-        height: 500px;
+        height: 522px;
     }
+    
     #calculate-btn {
         background-color: #037247;
         border: none;
@@ -123,14 +143,13 @@ input-field{
         color: #fff;
     }
     
+    #save-btn{
+        background-color: #037247;
+        border: none;
+        border-radius: 8px;
+        padding: 5px 16px;
+        color: #fff;
+    }
     
-#save-btn{
-    background-color: #037247;
-    border: none;
-    border-radius: 8px;
-    padding: 5px 16px;
-    color: #fff;
+    
 }
-
-
-  }

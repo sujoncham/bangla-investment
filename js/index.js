@@ -27,13 +27,13 @@ function calculate(){
                // showing balance
           document.getElementById('expence-total').innerText = totalCost;
           document.getElementById('balance-total').innerText = totalBalance;
-          text1 = "input valid";
+          text1 = "Successfull";
           }
-          document.getElementById('text').innerText = text1;
+          document.getElementById('text1').innerText = text1;
       
-          text = "input valid";
+          text = "Successfull";
           }
-          document.getElementById('warning-text').innerText = text;
+          document.getElementById('text').innerText = text;
 }
 
 // this is percentage part 
@@ -47,8 +47,9 @@ function save(){
     // percentage input 
     const saveInputh = document.getElementById('save-input');
     const saveValue = parseInt(saveInputh.value);
-    if(typeof (saveValue.value)!='number'){
-        alert("hello");
+    let text2;
+    if(isNaN(saveValue) || saveValue < 0){
+        text2 = "invalid input";
     } else{
         // percentage innerText value 
     const saveAmount = document.getElementById('save-amount')
@@ -62,6 +63,8 @@ function save(){
     document.getElementById('save-amount').innerText = totalSave;
     // remaining balance
     document.getElementById('remain-balance').innerText = mainValue - totalSave;
-    }
+    text2 = "Successfull";
     
+    }
+    document.getElementById('text2').innerText = text2;
 }
