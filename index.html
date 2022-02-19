@@ -13,61 +13,60 @@
 </head>
 <body>
     <div class="Investment">
-        <div class="image-part">
-            <img src="img/investment.jpg" alt="">
-        </div>
-       
-        <div id="welcome-text">
-            <h1>Welcome to Bangla Investment</h1>
-            <div id="input-field">
-                <div>
-                    <h1>Income</h1>
-                    <label for="income">Income</label>
-                    <input id="income-input" placeholder="Enter Value"> </br>
-                    
-                </div>
-                <div>
-                    <h1>Expences</h1>
-                    <label for="food">Food</label>
-                    <input type="number" id="food-input" placeholder="Enter Value"> </br>
-                    <label for="rent">Rent</label>
-                    <input id="rent-input" placeholder="Enter Value"> </br>
-                    <label for="clothes">Clothes</label>
-                    <input id="clothe-input" placeholder="Enter Value"> </br>
-                    <button onclick="calculate()" id="calculate-btn">Calculate</button>
-                </div>
-            </div>
-            <div class="transaction">
-                <div class="income">
-                    <h3>Income</h3>
-                    <p>$<span id="income-total">00</span> </p>
-                </div>
-                <div class="expence">
-                    <h3>Total Expenses</h3>
-                    <p>$<span id="expence-total">00</span> </p>
-                </div>
-                <div class="balance">
-                    <h3>Balance</h3>
-                    <p>$<span id="balance-total">00</span></p>
-                </div>
-            </div>
-
-            <div>
-                <h1>Save</h1>
-                <label for="save">Clothes</label>
-                <input id="save-input" placeholder="Enter Value"> % 
-                <button onclick="save()" id="save-btn">Save</button>
-                <div>
-                    <div class="expence">
-                        <h3>Saving Amount : $<span id="save-amount">00</span></h3>
-                    </div>
-                    <div class="balance">
-                        <h3>Remaining Balance : $<span id="remain-balance">00</span> </h3>
-                    </div>
-                </div>
+        <h1>Bangla Investment</h1>
+        <div class="calculation">
+            <div class="image-part">
+                <img src="img/investment.jpg" alt="">
             </div>
            
+            <div class="main-part">
+                
+                <div class="input-field">
+                    <div class="income">
+                        <h4>Income</h4>
+                        <label for="income">Income</label>:
+                        <input type="number" id="income-input" placeholder="Enter Value"> </br>
+                        
+                    </div>
+                    <div class="expence-field">
+                        <p>Expences</p>
+                        <label for="food">Food  </label>:
+                        <input type="number" id="food-input" placeholder="Enter Value"> </br>
+                        <label for="rent">Rent </label>:
+                        <input id="rent-input" placeholder="Enter Value"> </br>
+                        <label for="clothes">Clothes </label>:
+                        <input id="clothe-input" placeholder="Enter Value"> </br>
+                        <button onclick="calculate()" id="calculate-btn">Calculate</button>
+                    </div>
+                </div>
+                <div class="transaction">
+                    <div class="expence">
+                        <p>Total Expenses : $<span id="expence-total">00</span></p>
+                    </div>
+                    <div class="balance">
+                        <p>Balance : $<span id="balance-total">00</span></p>
+                    </div>
+                </div>
+    
+                <div class="save-part">
+                    <div class="percentage">
+                        <label for="save">Save :</label>
+                        <input id="save-input" placeholder="Enter Value"> <span> % </span>
+                        <button onclick="save()" id="save-btn">Save</button>
+                    </div>
+                    <div>
+                        <div class="expence">
+                            <p>Saving Amount : $<span id="save-amount">00</span></p>
+                        </div>
+                        <div class="balance">
+                            <p>Remaining Balance : $<span id="remain-balance">00</span> </p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
         </div>
+       
     </div>
     
 
