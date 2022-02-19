@@ -52,6 +52,12 @@ input-field{
     align-items: center;
 }
 
+
+#warning-text, #text{
+    color: #f52021;
+    font-size: 10px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
     .investment{

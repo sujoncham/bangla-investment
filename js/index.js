@@ -19,17 +19,21 @@ function calculate(){
           } else{
             // total cost balance
           const totalCost = foodValue + rentValue + clotheValue;
-      
-          const totalBalance = incomeValue- totalCost;
+          let text1;
+          if(incomeValue < totalCost){
+            text1 = "income should not less than total cost";
+          } else{
+            const totalBalance = incomeValue- totalCost;
                // showing balance
           document.getElementById('expence-total').innerText = totalCost;
           document.getElementById('balance-total').innerText = totalBalance;
+          text1 = "input valid";
+          }
+          document.getElementById('text').innerText = text1;
+      
           text = "input valid";
-          
           }
           document.getElementById('warning-text').innerText = text;
-          
-    
 }
 
 // this is percentage part 
