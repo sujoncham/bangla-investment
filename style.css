@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.main-part{
+    background-color: #ddd;
+}
+
 .calculation{
     display: flex;
 }
