@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matir Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="matir-bank">
+       
+        <div id="welcome-text">
+            <h1>Welcome to Matir Bank</h1>
+            <div class="transaction">
+                <div class="deposit" id="deposit">
+                    <h3>Deposit</h3>
+                    <p>$<span id="depo-total">00</span> </p>
+                </div>
+                <div class="widrow" id="widrow">
+                    <h3>Widrown</h3>
+                    <p>$<span id="widrow-total">00</span> </p>
+                </div>
+                <div class="balance" id="balance">
+                    <h3>Balance</h3>
+                    <p>$<span id="depo-balance">500</span></p>
+                </div>
+            </div>
+            <div id="input-field">
+                <div>
+                    <input id="deposit-input" placeholder="Enter Value"> </br>
+                    <button onclick="depositValue()" id="deposit-btn">Deposit</button>
+                </div>
+                <div>
+                    <input id="widrow-input" placeholder="Enter Value"> </br>
+                    <button onclick="widrowValue()" id="widrow-btn">Widrown</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>
