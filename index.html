@@ -34,29 +34,37 @@
                     <input id="rent-input" placeholder="Enter Value"> </br>
                     <label for="clothes">Clothes</label>
                     <input id="clothe-input" placeholder="Enter Value"> </br>
-                    <button onclick="calculate()" id="widrow-btn">Calculate</button>
+                    <button onclick="calculate()" id="calculate-btn">Calculate</button>
                 </div>
             </div>
             <div class="transaction">
-                <div class="deposit" id="deposit">
-                    <h3>Deposit</h3>
-                    <p>$<span id="depo-total">00</span> </p>
+                <div class="income">
+                    <h3>Income</h3>
+                    <p>$<span id="income-total">00</span> </p>
                 </div>
-                <div class="widrow" id="widrow">
+                <div class="expence">
                     <h3>Total Expenses</h3>
-                    <p>$<span id="widrow-total">00</span> </p>
+                    <p>$<span id="expence-total">00</span> </p>
                 </div>
-                <div class="balance" id="balance">
+                <div class="balance">
                     <h3>Balance</h3>
-                    <p>$<span id="depo-balance">500</span></p>
+                    <p>$<span id="balance-total">00</span></p>
                 </div>
             </div>
 
             <div>
                 <h1>Save</h1>
-                <label for="clothes">Clothes</label>
-                <input id="clothe-input" placeholder="Enter Value"> </br>
-                <button onclick="save()" id="widrow-btn">Calculate</button>
+                <label for="save">Clothes</label>
+                <input id="save-input" placeholder="Enter Value"> % 
+                <button onclick="save()" id="save-btn">Save</button>
+                <div>
+                    <div class="expence">
+                        <h3>Saving Amount : $<span id="save-amount">00</span></h3>
+                    </div>
+                    <div class="balance">
+                        <h3>Remaining Balance : $<span id="remain-balance">00</span> </h3>
+                    </div>
+                </div>
             </div>
            
         </div>
