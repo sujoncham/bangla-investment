@@ -1,0 +1,21 @@
+
+.Investment{
+    width: 992px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.image-part {
+    width: 50%;
+    padding: 10px;
+}
+
+.welcome-tex{
+    width: 50%;
+    padding: 10px;
+}
+
+.image-part img{
+    width: 100%;
+}
